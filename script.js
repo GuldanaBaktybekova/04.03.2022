@@ -5,7 +5,7 @@ document.body.classList.toggle('dark-theme', darkTheme.checked);
 
 darkTheme.addEventListener('change', function(){
   localStorage.setItem('dark-theme', +darkTheme.checked);
-  document.classList.toggle('dark-theme');
+  document.body.classList.toggle('dark-theme');
 });
 
 

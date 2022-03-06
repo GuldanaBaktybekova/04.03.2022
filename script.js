@@ -1,11 +1,28 @@
-const span = document.querySelector("span");
+const h1 = document.querySelector("h1");
 let interval = setInterval(() => {
-  span.textContent++;
-}, 1);
+  h1.style.color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;;
+}, 500);
 
-document.querySelector("button").addEventListener("click", function () {
-  clearInterval(interval);
-});
+
+
+
+
+
+
+
+
+
+
+
+
+// const span = document.querySelector("span");
+// let interval = setInterval(() => {
+//   span.textContent++;
+// }, 1000);
+
+// document.querySelector("button").addEventListener("click", function () {
+//   clearInterval(interval);
+// });
 
 // let timeoutId;
 // document.querySelector('button').addEventListener('click', function(){
@@ -33,7 +50,7 @@ document.querySelector("button").addEventListener("click", function () {
 //   document.body.classList.toggle('dark-theme');
 // });
 
-// const example1span = document.querySelector('#examle-1 span');
+// const example1Span = document.querySelector('#examle-1 span');
 // example1Span.textContent = localStorage.getItem('example-1-number') ?? 0;
 // document
 //   .querySelector('#example-1 button')

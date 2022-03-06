@@ -2,7 +2,12 @@ const h1 = document.querySelector("h1");
 let interval = setInterval(() => {
   h1.style.color = `rgb(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255})`;;
 }, 500);
-
+document.querySelector("#start").addEventListener("click", function () {
+  clearInterval(interval);
+});
+document.querySelector("#stop").addEventListener("click", function () {
+  clearInterval(interval);
+});
 
 
 
